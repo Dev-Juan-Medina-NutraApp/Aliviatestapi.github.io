@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API-EPICOR - ORDERS</title>
+</head>
+<body>
+    <nav style="margin-bottom: 50px; text-align: center; text-decoration: none; ">
+        <ul>
+          <li><a href="/fetch/inventorypart.html" data-endpoint="inventoryPart">Inventario de Parte o SKU</a></li>
+          <li><a href="/fetch/index.html" data-endpoint="otherEndpoint">Creación de Usuarios</a></li>
+          <!-- Agrega más elementos de menú según tus necesidades -->
+        </ul>
+    </nav>
+    <h1 style="text-align: center;">Formulario de creación de Ordenes en Epicor</h1>
+        <div style="display: flex; justify-content: center; align-items: center; max-width: 200px; margin: auto;">        
+            <form id="orders">
+                <label for="docnumcli">Cliente:</label>
+                <input type="text" id="docnumcli" name="docnumcli" required>
+                
+                <label for="Cant1">Cantidades:</label><br>
+                <input type="number" id="Cant1" name="Cant1" style="width: 50px;" required disabled value="">
+                <input type="checkbox" id="checkbox1" name="checkbox1" value="INNRS001">
+                <label for="CommonRegime">NEURESSENS</label><br>
+
+                <input type="number" id="Cant2" name="Cant2" style="width: 50px;" required disabled value="">
+                <input type="checkbox" id="checkbox2" name="checkbox2" value="INMUV002">
+                <label for="CommonRegime">MULTIESSENS</label><br>
+
+                <input type="number" id="Cant3" name="Cant3" style="width: 50px;" required disabled value="">
+                <input type="checkbox" id="checkbox3" name="checkbox3" value="INMYS003">
+                <label for="SimplifiedRegime">MYOESSENS</label><br>
+
+                <button type="submit">Agregar</button>
+            </form>
+        </div>
+        <div id="app" style="text-align: center; margin-bottom: 300px;"></div>
+    <script src="orders.js" type="module"></script>
+</body>
+</html>

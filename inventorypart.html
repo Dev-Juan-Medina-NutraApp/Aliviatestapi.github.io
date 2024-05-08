@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API-EPICOR - INVENTORY</title>
+</head>
+<body>
+    <nav style="margin-bottom: 50px; text-align: center; text-decoration: none; ">
+        <ul>
+          <li><a href="/fetch/orders.html" data-endpoint="inventoryPart">Creación de Ordenes</a></li>
+          <li><a href="/fetch/index.html" data-endpoint="otherEndpoint">Creación de Usuarios</a></li>
+          <!-- Agrega más elementos de menú según tus necesidades -->
+        </ul>
+    </nav>
+    <h1 style="text-align: center;">Formulario de consulta de Inventario en Epicor</h1>
+    <p style="text-align: center;">(Consulta por SKU de producto)</p><br><br><br>
+    <div style="text-align: center; margin-bottom: 50px;">
+        <form id="formPartNum">
+            <label for="partNum">Número de parte:</label>
+            <input type="text" id="partNum" name="partNum" required>
+            <button type="submit">Buscar</button>
+        </form>
+    </div>
+    <div id="app" style="text-align: center; margin-bottom: 300px;"></div>
+    <script src="inventorypart.js" type="module"></script>
+</body>
+</html>
